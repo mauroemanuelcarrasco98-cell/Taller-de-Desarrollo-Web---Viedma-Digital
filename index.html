@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>¡Mi entorno de desarrollo!</h1>
+    
+    <ul class="navbar">
+  <li><a href="Ingreso.html">Ingreso</a>
+  <li><a href="actividades.html">Actividades Extra</a>
+  <li><a href="Referencias.html">Referencias y Bibliografía</a>
+  <li><a href="Notas.html">Notas Personales</a>
+</ul>
+
+    <h1>¡Creando nuestro entorno de desarrollo!</h1>
+
+    <p>En esta página iremos realizando los ejercicios indicados en el Curso de Desarrolo Web 2026 en Viedma Digital.</p> 
+
+    <h2>Formulario HTML</h2>
+    
+    <p>Aquí realizamos nuestro primer formulario básico en HTML a partir de lo aprendido en "https://www.w3schools.com/html/html_forms.asp".</p>
+
+    <form action="/action_page.php">
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="fname" name="fname" value="Juana"><br>
+        <label for="lname">Apellido:</label><br>
+        <input type="text" id="lname" name="lname" value="Perez"><br><br>
+        <input type="submit" value="Enviar">
+    </form> 
+
+<p>Si haces clic en el botón "Enviar", los datos del formulario se enviarán a una página llamada "/pagina-de-envio.php".</p>
+
 </body>
 </html>
