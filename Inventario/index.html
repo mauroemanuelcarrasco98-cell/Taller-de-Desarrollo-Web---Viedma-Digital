@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario de Equipamiento de Robótica</title>
+  
+  <!-- Vinculación del archivo CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Contenedor principal de la aplicación -->
+  <div class="container">
+    <h1>🤖 Inventario de Robótica</h1>
+    
+    <!-- Grupo de entrada: campo de texto y botón para agregar -->
+    <div class="input-group">
+      <input type="text" id="inputComponente" placeholder="Ej: Placa Arduino Uno, Servomotor...">
+      <button id="btnAgregar">Agregar</button>
+    </div>
+
+    <!-- Contenedor para mostrar mensajes de estado (éxito/error) -->
+    <div id="mensaje" class="mensaje"></div>
+
+    <!-- Lista dinámicamente gestionada por JavaScript -->
+    <ul id="listaInventario">
+      <li class="item-inventario">
+        <span class="nombre-componente">Placa Arduino Uno</span>
+        <button class="btn-eliminar">Quitar</button>
+      </li>
+      <li class="item-inventario">
+        <span class="nombre-componente">Servomotor</span>
+        <button class="btn-eliminar">Quitar</button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Vinculación del archivo JavaScript externo -->
+  <script src="script.js"></script>
+
+  <a href="../index.html" style="display: inline-block; margin-bottom: 15px; text-decoration: none; font-weight: bold; color: #27ae60;">
+    ← Volver al Portfolio Principal
+</a>
+
+</body>
+</html>
