@@ -1,0 +1,202 @@
+/* ==========================================
+   RESET Y CONFIGURACIÓN FLUIDA
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f5;
+    color: #2e3d30;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   HEADER Y NAVEGACIÓN FLUIDA
+   ========================================== */
+.header-principal {
+    background-color: #1e5631;
+    color: #ffffff;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo h1 {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.logo p {
+    font-size: 0.85rem;
+    color: #a2d5ab;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #4c9a2a;
+}
+
+/* ==========================================
+   CONTENEDOR DEL PORTFOLIO (ANCHO COMPLETO)
+   ========================================== */
+.portfolio-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.portfolio-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #2e7d32;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.badge {
+    background-color: #e2f0d9;
+    color: #1e5631;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.badge-light {
+    background-color: #a2d5ab;
+    color: #1e5631;
+}
+
+.portfolio-section h2 {
+    color: #1e5631;
+    font-size: 1.4rem;
+}
+
+.separator {
+    border: 0;
+    height: 1px;
+    background: #d0e1d4;
+    margin: 30px 0;
+}
+
+/* ==========================================
+   ESTILOS DESTACADOS Y BOTONES
+   ========================================== */
+.featured-section {
+    background-color: #1e5631;
+    color: #ffffff;
+    border-top: none;
+}
+
+.featured-section h2 {
+    color: #ffffff;
+}
+
+.featured-section .descripcion-desarrollo {
+    color: #e0f2e1;
+}
+
+.btn-primary {
+    background-color: #2e7d32;
+    color: #ffffff;
+    border: none;
+    padding: 10px 22px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1e5631;
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: #1e5631;
+    border: none;
+    padding: 10px 22px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #a2d5ab;
+}
+
+/* FORMULARIO HORIZONTAL */
+.form-horizontal {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.btn-submit {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.resultado-box {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #eef7f0;
+    border: 1px solid #a2d5ab;
+    border-radius: 4px;
+    color: #1e5631;
+    font-weight: 600;
+    display: none;
+}

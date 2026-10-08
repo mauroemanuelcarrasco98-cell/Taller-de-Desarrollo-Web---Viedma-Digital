@@ -1,37 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desarrollo Web - Viedma Digital</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <ul class="navbar">
-  <li><a href="Ingreso.html">Ingreso</a>
-  <li><a href="actividades.html">Actividades Extra</a>
-  <li><a href="Referencias.html">Referencias y Bibliografía</a>
-  <li><a href="Notas.html">Notas Personales</a>
-</ul>
 
-    <h1>¡Creando nuestro entorno de desarrollo!</h1>
+    <header class="header-principal">
+        <div class="logo">
+            <h1>Desarrollo Web | Viedma Digital</h1>
+            <p>Curso de Desarrollo Web Sep-Nov 2026</p>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="Ingreso.html">Clases</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="Referencias.html">Referencias</a></li>
+                <li><a href="Notas.html">Notas</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <p>En esta página iremos realizando los ejercicios indicados en el Curso de Desarrolo Web 2026 en Viedma Digital.</p> 
+    <main class="portfolio-container">
 
-    <h2>Formulario HTML</h2>
-    
-    <p>Aquí realizamos nuestro primer formulario básico en HTML a partir de lo aprendido en "https://www.w3schools.com/html/html_forms.asp".</p>
+        <!-- SECCIÓN 0: FORMULARIO BASE -->
+        <section class="portfolio-section">
+            <div class="section-header">
+                <span class="badge">HTML Básico</span>
+                <h2>Formulario HTML de Práctica</h2>
+            </div>
+            <p>Primer formulario básico en HTML para recolección de datos iniciales.</p>
 
-    <form action="/action_page.php">
-        <label for="fname">Nombre:</label><br>
-        <input type="text" id="fname" name="fname" value="Juana"><br>
-        <label for="lname">Apellido:</label><br>
-        <input type="text" id="lname" name="lname" value="Perez"><br><br>
-        <input type="submit" value="Enviar">
-    </form> 
+            <form action="/action_page.php" class="form-horizontal">
+                <div class="form-group">
+                    <label for="fname">Nombre:</label>
+                    <input type="text" id="fname" name="fname" value="Juana">
+                </div>
+                <div class="form-group">
+                    <label for="lname">Apellido:</label>
+                    <input type="text" id="lname" name="lname" value="Perez">
+                </div>
+                <button type="submit" class="btn-submit">Enviar Datos</button>
+            </form>
+        </section>
 
-<p>Si haces clic en el botón "Enviar", los datos del formulario se enviarán a una página llamada "/pagina-de-envio.php".</p>
+        <hr class="separator">
 
+        <!-- SECCIÓN 1: VARIABLES -->
+        <section class="portfolio-section">
+            <div class="section-header">
+                <span class="badge">Actividad JS</span>
+                <h2>Declaración de Variables e Interacción Básica</h2>
+            </div>
+            <p>Ejemplo de captura de entradas dinámicas con variables en JavaScript (utilizando <code>let</code> y <code>prompt()</code>) para mostrar mensajes de bienvenida tanto en consola como en pantalla.</p>
+            
+            <div class="action-area">
+                <button id="btnEjecutar" class="btn-primary">Ejecutar Algoritmo</button>
+                <div id="resultadoBienvenida" class="resultado-box"></div>
+            </div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- SECCIÓN 2: CALCULADORA -->
+        <section class="portfolio-section featured-section">
+            <div class="section-header">
+                <span class="badge badge-light">Switch</span>
+                <h2>Calculadora Interactiva (Soporta Palabras y Símbolos)</h2>
+            </div>
+            <p class="descripcion-desarrollo">
+                Algoritmo condicional que captura dos números y realiza operaciones evaluando la opción elegida mediante una estructura <code>switch</code>. Soporta el ingreso de palabras ("suma", "resta") o símbolos ("+", "-", "*", "x", "/").
+            </p>
+            <button onclick="ejecutarCalculadora()" class="btn-secondary">Abrir Calculadora</button>
+        </section>
+
+        <hr class="separator">
+
+        <!-- SECCIÓN 3: FUNCIONES MODULARIZADAS -->
+        <section class="portfolio-section">
+            <div class="section-header">
+                <span class="badge">Function</span>
+                <h2>Programación Modular con Funciones</h2>
+            </div>
+            <p class="descripcion-desarrollo">
+                Esta actividad aplica el principio de modularización a través de funciones declaradas independientemente (<code>sumar</code>, <code>restar</code>, <code>multiplicar</code> y <code>dividir</code>). La función principal orquesta la ejecución llamando a la función especializada dentro del <code>switch</code> (admite símbolos y texto).
+            </p>
+            <button onclick="ejecutarActividadFunciones()" class="btn-primary">Ejecutar con Funciones</button>
+        </section>
+
+        <hr class="separator">
+
+        <!-- NUEVA SECCIÓN: ACTIVIDAD PRÁCTICA 1 JAVASCRIPT (DOM) -->
+        <section class="portfolio-section">
+            <div class="section-header">
+                <span class="badge">Actividad Práctica JS</span>
+                <h2 id="tituloDinamico">Manipulación del DOM con getElementById</h2>
+            </div>
+            
+            <p id="parrafoDinamico" class="descripcion-desarrollo">
+                Esta actividad selecciona tres elementos con IDs únicos (<code>#tituloDinamico</code>, <code>#parrafoDinamico</code> y <code>#btnModificarDOM</code>). Al hacer clic en el botón, JavaScript lee sus contenidos por consola y actualiza dinámicamente sus estilos y textos.
+            </p>
+
+            <button id="btnModificarDOM" onclick="ejecutarPracticaDOM()" class="btn-primary">Modificar Elemento y Ver en Consola</button>
+        </section>
+
+    </main>
+
+    <!-- SCRIPTS ENLAZADOS -->
+    <script src="script.js"></script>
+    <script src="calculadora.js"></script>
+    <script src="funciones.js"></script>
+    <script src="dom_practica.js"></script>
 </body>
 </html>
